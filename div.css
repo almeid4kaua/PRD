@@ -1,0 +1,60 @@
+.pirate-card {
+    max-width: 340px;
+    background: #1a2238;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.pirate-card-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pirate-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.pirate-title {
+    font-family: 'Bungee', sans-serif;
+    color: #6A0DAD;
+    margin: 10px 0;
+}
+
+.pirate-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.pirate-more {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #ffcc00;
+    background-color: #2a344f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pirate-more:hover {
+    background-color: #ffcc00;
+    color: #1a2238;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .pirate-card {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+.pirate-extra-info {
+    font-family: 'Roboto', sans-serif;
+}

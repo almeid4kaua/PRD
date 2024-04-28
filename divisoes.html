@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rei Doce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./div.css">
+    <link rel="stylesheet" href="./comandantes.css">
+    <link rel="stylesheet" href="./capitaes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <a class="logo" href="/">Piratas do Rei Doce</a>
+        <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./capitaes.html">Capitães</a></li>
+        <li><a href="./comandantes.html">Comandantes</a></li>
+        <li><a href="./sub.html">Sub-comandantes</a></li>
+        <li><a href="./divisoes.html">Divisões e aliados</a></li>
+        <li><a href="./inimigos.html">Inimigos</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="divisoes-1">
+        <section>
+            <h1 class="intro3">Os Relish do Rei Doce</h1>
+            <p class="intro-2">Divisões únicas, com suas personalidades baseadas em quem as comanda. São os membros dos Rei Doce organizados em sub-divisões.</p>
+            <div class="pirate-card">
+                <div class="pirate-card-header">
+                    <img src="./imagens/cartazhermes.jpg" alt="Capitão" class="pirate-image">
+                </div>
+                <div class="pirate-card-body">
+                    <h3 class="pirate-title">Hermes</h3>
+                    <p class="pirate-info">Os Enviados do Caos.</p>
+                    <a href="#" class="pirate-more" onclick="toggleText()">Descubra mais</a>
+                    <p class="pirate-extra-info" style="display: none;"> Uma frota comandada por Hermes. São piratas com a personalidade única virada a implantar terror em qualquer ilha, sem precisar necessariamente de um motivo. São temidos por seus feitos em batalha, sempre destruindo tudo e de forma literal, enviando o caos as ilhas e nações.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="divisoes-1">
+            <div class="pirate-card">
+                <div class="pirate-card-header">
+                    <img src="./imagens/cartazringo.jpg" alt="Capitão" class="pirate-image">
+                </div>
+                <div class="pirate-card-body">
+                    <h3 class="pirate-title">Ringo</h3>
+                    <p class="pirate-info">Os Docinhos.</p>
+                    <a href="#" class="pirate-more" onclick="toggleText()">Descubra mais</a>
+                    <p class="pirate-extra-info" style="display: none;"> Um grupo de anões liderados por Ringo, sendo composto exclusivamente por tontattas se trata de um grupo de vanguarda, costumam agir a frente da tripulação em  ações rápidas, podendo ser furtivas ou não. Tem como objetivo desestabilizar grupos grandes de inimigos, se aproveitando de sua agilidade, força e tamanho minúsculo para se infiltrar em meio a inimigos e os desestabilizar de dentro para fora, quebrando formações ou simples eliminando o maior número de alvos possiveis. Também podem agir de forma furtiva para saquear navios e fortes inimigos, movendo seus tesouros sem causarem confusão. também graças ao tamanho da raça os tornam perfeitos para situações de espionagem, basicamente podem entrar em qualquer lugar, se esconder em qualquer canto e com essas características podem roubar quaisquer tipo de informações que desejarem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="divisoes-1">
+            <div class="pirate-card">
+                <div class="pirate-card-header">
+                    <img src="./imagens/cartazorion.jpg" alt="Capitão" class="pirate-image">
+                </div>
+                <div class="pirate-card-body">
+                    <h3 class="pirate-title">Orion</h3>
+                    <p class="pirate-info">Os Desgarrados.</p>
+                    <a href="#" class="pirate-more" onclick="toggleText()">Descubra mais</a>
+                    <p class="pirate-extra-info" style="display: none;"> Os mais… desunidos. Gostam de brincar em batalhas, e invadir o espaço um do outro. Isso acaba gerando a desunião entre eles, uns querendo mais do que outros, tendo menos respeito entre eles. São os mais distraídos em um contexto de luta, mas isso não os deixa fracos.</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="comandante" id="Comandantes">
+            <H1 class="titulo-c">Aliados</H1>
+            <div class="container">
+                <div class="capitao-card">
+                    <div class="capitao-image">
+                        <img src="./imagens/cartaztomoe.jpg" alt="Tomoe" class="img-hover">
+                        <div class="capitao-text">
+                            <h2>Tomoe</h2>
+                            <p class="apresenta"><i>”ESSA É A GRAÇA, HANZO! DESAFIAR OS REIS!”</i></p>
+                            <br>
+                            <p><i>Dispensa apresentações, uma guerreira implacavel. Fez uma aliança valiosa com os Rei Doce, a pedido do próprio capitão.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comandante" id="Comandantes">
+            <div class="container">
+                <div class="capitao-card">
+                    <div class="capitao-image">
+                        <img src="./imagens/cartazklaus.jpg" alt="Klaus" class="img-hover">
+                        <div class="capitao-text">
+                            <h2>Klaus</h2>
+                            <p class="apresenta"><i>”Saturn está morto. Eu estou prestes a encarar os deuses e caminhar de cabeça erguida até o inferno.”</i></p>
+                            <br>
+                            <p><i>O terceiro melhor espadachim do mundo, conhecido por suas lendárias façanhas, um homem com muita história para contar.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comandante" id="Comandantes">
+            <div class="container">
+                <div class="capitao-card">
+                    <div class="capitao-image">
+                        <img src="./imagens/cartazelizabeth.jpg" alt="Liz" class="img-hover">
+                        <div class="capitao-text">
+                            <h2>Elizabeth</h2>
+                            <p class="apresenta"><i>”Mesmo que ninguém acredite em você, levante o peito e grite em desafio!!”</i></p>
+                            <br>
+                            <p><i>Uma agradavel aliada, amiga pessoal do Rei Doce. Apesar da aparência gentil, é uma excelente lutadora, com os poderes de uma Akuma no Mi!</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

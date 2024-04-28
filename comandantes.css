@@ -1,0 +1,21 @@
+.intro {
+    text-align: center;
+    color: #6A0DAD;
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+.intro-2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: small;
+}
+
+.intro3 {
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+    color: #6A0DAD;
+}
