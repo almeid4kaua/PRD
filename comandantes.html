@@ -1,102 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rei Doce</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="comandantes.css">
-    <link rel="stylesheet" href="./capitaes.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+<html lang="pt-BR" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>PRD</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="card.css">
+      <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body class="body">
+      <nav>
+         <div class="logo">
+            COMANDANTES
+         </div>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li>
+               <label for="btn-1" class="show"><a href="jornal">Jornal</a></label>
+               <a href="#">Jornal</a>
+               <input type="checkbox" id="btn-1">
+            </li>
+            <li>
+               <label for="btn-2" class="show"><a href="capitaes.html">Capitães</a></label>
+               <a href="./capitaes.html">Capitães</a>
+            <li>
+                <label for="btn-6" class="show">Comandantes</label>
+                <a href="#">Comandantes</a>
+                <input type="checkbox" id="btn-6">
+                <ul>
+                   <li><a href="comandantes.html">Comandantes</a></li>
+                   <li><a href="sub.html">Flavor's</a></li>
+                </ul>
+             </li>
+            <li>
+               <label for="btn-5" class="show"><a href="">Divisões</a></label>
+               <a href="divisoes.html">Divisões</a>
+               <input type="checkbox" id="btn-5">
+            </li>
 
-<body>
-    <header>
-    <nav>
-        <a class="logo" href="/">Piratas do Rei Doce</a>
-        <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-        <li><a href="./index.html">Início</a></li>
-        <li><a href="./capitaes.html">Capitães</a></li>
-        <li><a href="./comandantes.html">Comandantes</a></li>
-        <li><a href="./sub.html">Sub-comandantes</a></li>
-        <li><a href="./divisoes.html">Divisões e aliados</a></li>
-        <li><a href="./inimigos.html">Inimigos</a></li>
-        </ul>
-    </nav>
+            <li><a href="inimigos.html">Inimigos</a></li>
+         </ul>
+      </nav>
     </header>
+
     <main>
-        <section class="comandante" id="Comandantes">
-            <H1 class="titulo-c">Comandantes</H1>
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazmagnum.jpg" alt="Magnum" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Magnum</h2>
-                            <p class="apresenta"><i>”Matá-lo será o meu último ato de bondade para esse mundo. Tenha como misericórdia.”</i></p>
-                            <br>
-                            <p><i>Dispensa apresentações, simplesmente o mais cruel entre os piratas. Um homem criado das agruras da vida pirata, o ser mais cruel que muitos da tripulação já conheceram.</i></p>
-                        </div>
+
+        <main>
+
+            <div class="doce">
+                <h1 class="doce">COMANDANTES</h1>
+                <p>Aqueles que representam a força da tripulação, os considerados mais fortes dentre todos os outros.</p>
+            </div>
+            <section class="magnum">
+                <section class="personagem">
+                <div class="mix"></div>
+                <div class="texto-esquerda">
+                  <h2>PROCURADO</h2>
+                  <p>R$1.014.000.000</p>
+                  <h1 class="selecoes">COMANDANTE</h1>
+              </div>
+          
+                <div class="conteudo">
+                    <img src="./reidoce/magnumsuper.png" alt="Personagem">
+                    <div class="texto">
+                        <h2 class="name">MAGNUM</h2>
+                        <p class="name">
+                          Carrasco dos Mares <br>
+                            "Matá-lo será o meu último ato de bondade para esse mundo. Tenha como misericórdia."
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazgenerosa.jpg" alt="Generosa" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Generosa</h2>
-                            <p class="apresenta"><i>”Se preparem guerreiros, pois hoje iremos tirar a coroa do usurpador! Cantem! Gritem! Lutem!”</i></p>
-                            <br>
-                            <p><i>Conhecida por liderar o exército do Rei Doce. Uma vez tomou a frente de mil homens, caidos e machucados, levantando seus animos para a luta, os enviando para a vitória, não há dúvida ou questionamento sobre sua importância.</i></p>
-                        </div>
+            </section>
+            </section>
+        
+                <hr>
+        
+            <section class="generosa">
+                <section class="personagem">
+                <div class="mix"></div>
+                <div class="texto-esquerda">
+                  <h2>PROCURADO</h2>
+                  <p>R$687.000.000</p>
+                  <h1 class="selecoes">COMANDANTE</h1>
+              </div>
+          
+                <div class="conteudo">
+                    <img src="./reidoce/GENEROSAIMG (1).png" alt="Personagem">
+                    <div class="texto">
+                        <h2>GENEROSA FARIAS</h2>
+                        <p>
+                          A Generosa <br>
+                            "Se preparem guerreiros, pois hoje iremos tirar a coroa do usurpador! Cantem! Gritem! Lutem!"
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazsylas.jpg" alt="Sylas" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Sylas</h2>
-                            <p class="apresenta"><i>”Dizem que sua lança corta os céus e as nuvens como se fosse uma mera bruma. Sua lança é uma lenda, uma arma tão poderosa quanto dizem ser.”</i></p>
-                            <br>
-                            <p><i>Um dos membros mais antigos da tripulação pirata, um membro que ganhou renome trazendo a confusão e junto disso, as conquistas.</i></p>
-                        </div>
+            </section>
+            </section>
+        
+            <hr>
+        
+            <section class="sylas">
+                <section class="personagem">
+                <div class="mix"></div>
+                <div class="texto-esquerda">
+                  <h2>PROCURADO</h2>
+                  <p>R$720.200.001</p>
+                  <h1 class="selecoes">COMANDANTE</h1>
+              </div>
+          
+                <div class="conteudo">
+                    <img src="./reidoce/sylas.png" alt="Personagem">
+                    <div class="texto">
+                        <h2>SYLAS SHINIDAS</h2>
+                        <p>
+                          Serpente Cristalina <br>
+                            "Dizem que sua lança corta os céus e as nuvens como se fosse uma mera bruma."
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazoliver.jpg" alt="Oliver" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Oliver</h2>
-                            <p class="apresenta"><i>”Que tipo de homem não teria medo de alguém que encarou a morte e voltou vivo?”</i></p>
-                            <br>
-                            <p><i>Com seu retorno do mundo dos mortos, Oliver voltou agitado, descontando sua fúria em uma ilha, de forma descontrolada. Os poucos sobreviventes contaram que ele se tornou um animal selvagem, terminando de trazer as ruinas para a ilha.</i></p>
-                        </div>
+            </section>
+            </section>
+        
+            <hr>
+        
+            <section class="oliver">
+                <section class="personagem">
+                <div class="mix"></div>
+                <div class="texto-esquerda">
+                  <h2>PROCURADO</h2>
+                  <p>R$947.000.000</p>
+                  <h1 class="selecoes">COMANDANTE</h1>
+              </div>
+          
+                <div class="conteudo">
+                    <img src="./reidoce/oliverimg (1).png" alt="Personagem">
+                    <div class="texto">
+                        <h2>OLIVER</h2>
+                        <p>
+                          Espírito Vingativo <br>
+                            "Que tipo de homem não teria medo de alguém que encarou a morte e voltou vivo?"
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            </section>
+        
     
     </main>
     <script src="./app.js"></script>

@@ -1,56 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inimigos - Rei Doce</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./inimigos.css">
-    <link rel="stylesheet" href="./capitaes.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <a class="logo" href="/">Piratas do Rei Doce</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./capitaes.html">Capitães</a></li>
-                <li><a href="./comandantes.html">Comandantes</a></li>
-                <li><a href="./sub.html">Sub-comandantes</a></li>
-                <li><a href="./divisoes.html">Divisões e aliados</a></li>
-                <li><a href="./inimigos.html">Inimigos</a></li>
-            </ul>
-        </nav>
+<html lang="pt-BR" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>PRD</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="card.css">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="inimigos.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body class="body">
+      <nav>
+         <div class="logo">
+            REI DOCE
+         </div>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li>
+               <label for="btn-1" class="show"><a href="jornal">Jornal</a></label>
+               <a href="jornal.html">Jornal</a>
+               <input type="checkbox" id="btn-1">
+            </li>
+            <li>
+               <label for="btn-2" class="show"><a href="capitaes.html">Capitães</a></label>
+               <a href="./capitaes.html">Capitães</a>
+            <li>
+                <label for="btn-6" class="show">Comandantes</label>
+                <a href="#">Comandantes</a>
+                <input type="checkbox" id="btn-6">
+                <ul>
+                   <li><a href="comandantes.html">Comandantes</a></li>
+                   <li><a href="sub.html">Flavor's</a></li>
+                </ul>
+             </li>
+            <li>
+               <label for="btn-5" class="show"><a href="">Divisões</a></label>
+               <a href="divisoes.html">Divisões</a>
+               <input type="checkbox" id="btn-5">
+            </li>
+
+            <li><a href="inimigos.html">Inimigos</a></li>
+         </ul>
+      </nav>
     </header>
+
     <main>
-        <section class="comandante" id="Comandantes">
-            <H1 class="titulo-c">Inimigos</H1>
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazakira.jpg" alt="Magnum" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Akira Kujo</h2>
-                            <p class="apresenta"><i>”Vivo ou morto, entregue sua cabeça para nós.”</i></p>
-                            <p><i>- Magnum.</i></p>
-                            <br>
-                            <p><i>Um dos mais detestáveis homens que já se opôs aos Rei Doce. Segundo relatos, nada suspeitos, o motivo de toda a confusão foi puro egoísmo de Akira Kujo, resultando em ferimentos para ambos os lados. Desde então, um homem busca por sua vingança.</i></p>
-                            <h3 class="rec"><i>Recompensa: 2.600.000.000 - morto</i></h3>
-                            <h3 class="rec"><i>Recompensa: 3.000.000.000 - vivo</i></h3>
-                        </div>
-                    </div>
+
+        <main>
+            <div class="doce">
+               <h1 class="doce">INIMIGOS</h1>
+               <P>Inimigos declarados da tripulação, com recompensas oferecidas por nós.</P>
+           </div>
+      
+        <section class="mix">
+            <section class="personagem">
+            <div class="mix"></div>
+            <div class="texto-esquerda">
+                <h1 class="selecoes">PROCURADO</h1>
+              <p class="money">R$3.000.000.000</p>
+
+          </div>
+      
+            <div class="conteudo">
+                <img src="./reidoce/akira (1).png" alt="Personagem">
+                <div class="texto">
+                    <h2>AKIRA KUJO</h2>
+                    <p>
+                      Emissário da Escuridão <br>
+                        <strong>Procurado vivo ou morto.</strong> Um monstro que cometeu muitos crimes contra a tripulação pirata, sem motivos aparentes. <br>
+                        "Forneceremos armas e informações sobre o paradeiro de Akira Kujo."<br>
+                        <a href="https://chat.whatsapp.com/G5qGpRXIUPzEejCzsji2QI" class="caçar">Caçar</a>
+                    </p>
                 </div>
             </div>
         </section>
+        </section>
+    
     </main>
     <script src="./app.js"></script>
 </body>

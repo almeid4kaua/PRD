@@ -39,8 +39,7 @@ img {
     color: white;
     text-align: left;
     text-align: center;
-    background-color: #1B1B1B;
-    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .texto, .texto1 h2 {
@@ -176,7 +175,7 @@ section {
 }
 
 .texto, .texto1 {
-    /*position: relative;  Referente ao conteudo exposto em PC */
+    position: relative; /* Referente ao conteudo exposto em PC */
     z-index: 1;
     padding: 20px;
     margin-right: 20px;
@@ -253,18 +252,10 @@ section {
     background-color: #2e2e2e;
 }
 
-.prd {
+.prd, .body {
     background-color: #5e064f;
 }
 
 .orion {
     background-color: #E0F7FA;
-}
-
-.tyr {
-    background-color: #2e2e2e;
-}
-
-.sektor {
-    background-color: rgb(148, 99, 9);
 }

@@ -1,169 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rei Doce</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="capitaes.css">
-    <link rel="stylesheet" href="comandantes.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+<html lang="pt-BR" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>PRD</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="card.css">
+      <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body class="body">
+      <nav>
+         <div class="logo">
+            FLAVOR'S
+         </div>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li>
+               <label for="btn-1" class="show"><a href="jornal">Jornal</a></label>
+               <a href="#">Jornal</a>
+               <input type="checkbox" id="btn-1">
+            </li>
+            <li>
+               <label for="btn-2" class="show"><a href="capitaes.html">Capitães</a></label>
+               <a href="./capitaes.html">Capitães</a>
+            <li>
+                <label for="btn-6" class="show">Comandantes</label>
+                <a href="#">Comandantes</a>
+                <input type="checkbox" id="btn-6">
+                <ul>
+                   <li><a href="comandantes.html">Comandantes</a></li>
+                   <li><a href="sub.html">Flavor's</a></li>
+                </ul>
+             </li>
+            <li>
+               <label for="btn-5" class="show"><a href="">Divisões</a></label>
+               <a href="divisoes.html">Divisões</a>
+               <input type="checkbox" id="btn-5">
+            </li>
 
-<body>
-    <header>
-    <nav>
-        <a class="logo" href="/">Piratas do Rei Doce</a>
-        <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-        <li><a href="./index.html">Início</a></li>
-        <li><a href="./capitaes.html">Capitães</a></li>
-        <li><a href="./comandantes.html">Comandantes</a></li>
-        <li><a href="./sub.html">Sub-comandantes</a></li>
-        <li><a href="./divisoes.html">Divisões e aliados</a></li>
-        <li><a href="./inimigos.html">Inimigos</a></li>
-        </ul>
-    </nav>
+            <li><a href="inimigos.html">Inimigos</a></li>
+         </ul>
+      </nav>
     </header>
+
     <main>
-        <section class="comandante" id="Comandantes">
-            <h1 class="intro">Os Flavor's do Rei Doce</h1>
-            <p class="intro-2">Abaixo dos Comandantes, há um segundo poder, piratas com capacidade de causar tanto terror quanto os próprios Comandantes. Entre eles não há hierarquia, ocupando o mesmo nivel de poder.</p>
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazanne.jpg" alt="Anne" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Anne D'Van</h2>
-                            <p class="apresenta"><i>”... Se quer vingar seu pai, levante e lute. Se oponha contra esse monstro, busque sua vingança.”</i></p>
-                            <br>
-                            <p><i>Filha de um antigo herói, um homem poderoso. Hoje em dia, uma das mais fortes da tripulação, carregando o fardo pesado de seu sobrenome.</i></p>
+
+        <main>
+            <div class="doce">
+                <h1 class="doce">FLAVOR'S DO REI DOCE</h1>
+                <p>Abaixo dos Comandantes, há um segundo poder, piratas com capacidade de causar tanto terror quanto os próprios Comandantes. Entre eles não há hierarquia, ocupando o mesmo nivel de poder.</p>
+            </div>
+            <section class="anne">
+                <section class="personagem">
+                <div class="mix"></div>
+                <div class="texto-esquerda">
+                  <h2></h2>
+                  <p></p>
+                  <h1 class="selecoes">FLAVOR</h1>
+              </div>
+          
+                <div class="conteudo">
+                    <img src="./reidoce/anne.png" alt="Personagem">
+                    <div class="texto">
+                        <h2>ANNE</h2>
+                        <p>
+                          Meratriz Rosa <br>
+                            "... Se quer vingar seu pai, levante e lute. Se oponha contra esse monstro, busque sua vingança."
+                        </p>
+                    </div>
+                </div>
+            </section>
+            </section>
+        
+                <hr>
+
+                <section class="bella">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">FLAVOR</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/bella.png" alt="Personagem">
+                        <div class="texto">
+                            <h2 class="name">BELLA</h2>
+                            <p class="name">
+                              Punho Suave <br>
+                                "Você já governou por tempo demais! Eu e minha irmã temos assuntos a tratar com você, usurpador!"
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazbella.jpg" alt="Bella" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Bella</h2>
-                            <p class="apresenta"><i>”Você já governou por tempo demais! Eu e minha irmã temos assuntos a tratar com você, usurpador!”</i></p>
-                            <br>
-                            <p><i>Uma nativa da ilha Valle, a guerreira mais forte da ilha, passou a acompanhar os piratas após o desenrolar de uma longa dominação.</i></p>
+                <hr>
+
+                <section class="scarleth">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">FLAVOR</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/scarleth.png" alt="Personagem">
+                        <div class="texto">
+                            <h2>SCARLETH</h2>
+                            <p>
+                              Fúria da Noite <br>
+                                "Onde eu estou? Quem são vocês?"
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazscar.jpg" alt="Scarleth" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Scarleth</h2>
-                            <p class="apresenta"><i>”Onde eu estou? Quem são vocês?”</i></p>
-                            <br>
-                            <p><i>Um experimento resgatado após uma invasão, um experimento de um tirano, e desde então aprendeu com os piratas e passou a viver como uma deles. Dizem que ela tem um poder assustador, ao mesmo tempo que encantador.</i></p>
+                <hr>
+
+                <section class="jack">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">FLAVOR</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/jackimg.png" alt="Personagem">
+                        <div class="texto">
+                            <h2>JACK</h2>
+                            <p>
+                              O Revolto <br>
+                              ”Aquele cara carrega quinhentas facas! Que merda é essa?!”
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazjack.jpg" alt="Jack" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Jack</h2>
-                            <p class="apresenta"><i>”Aquele cara carrega quinhentas facas! Que merda é essa?!”</i></p>
-                            <br>
-                            <p><i>O homem que cuida dos négocios do submundo, representando os piratas em geral. É esquentado e perigoso, todas as características de um vilão.</i></p>
+                <hr>
+
+                <section class="araki">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">FLAVOR</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/araki.png" alt="Personagem">
+                        <div class="texto">
+                            <h2>ARAKI</h2>
+                            <p>
+                              Flagelo Doce <br>
+                              ”Proto dois... Armagedon.”
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazaraki.jpg" alt="Araki" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Araki</h2>
-                            <p class="apresenta"><i>”Proto dois... Armagedon.”</i></p>
-                            <br>
-                            <p><i>Após ser derrotado por Lepaizo, decidiu unir-se a tripulação, sendo considerado um Ex-Aurora. Demorou para ganhar confiança, mas hoje em dia possui um dos cargos mais notórios da tripulação.</i></p>
+                <hr>
+
+                <section class="ares">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">FLAVOR</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/ares (2).png" alt="Personagem">
+                        <div class="texto">
+                            <h2>ARES</h2>
+                            <p>
+                              Oito Coroas <br>
+                                "MEUS ATAQUES NÃO TEM NOME, SEUS ARROMBADOS!"
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes">
-            <div class="container">
-                <div class="capitao-card">
-                    <div class="capitao-image">
-                        <img src="./imagens/cartazhermes.jpg" alt="Hermes" class="img-hover">
-                        <div class="capitao-text">
-                            <h2>Hermes</h2>
-                            <p class="apresenta"><i>”Tenho medo do que vem após o mensageiro.”</i></p>
-                            <br>
-                            <p><i>Dizem que antes do Carrasco dos Mares entrar em ação, envia o seu mensageiro, o prenúncio da ruína...</i></p>
+
+                <hr>
+
+                <section class="ringo">
+                    <section class="personagem">
+                    <div class="mix"></div>
+                    <div class="texto-esquerda">
+                      <h2></h2>
+                      <p></p>
+                      <h1 class="selecoes">RELISH</h1>
+                  </div>
+              
+                    <div class="conteudo">
+                        <img src="./reidoce/ringo2 (3).png" alt="Personagem">
+                        <div class="texto">
+                            <h2>RINGO</h2>
+                            <p>
+                              Espírito Animal <br>
+                              "Não seja tolo! Tontattas também podem ser bravos guerreiros. <br> Avancem meus amigos, hoje mostraremos que também podemos ser grandes!”
+            
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                </section>
 
-        <section class="comandante" id="Comandantes"></section>
-        <h1 class="intro">Membros</h1>
-        <div class="container">
-            <div class="capitao-card">
-                <div class="capitao-image">
-                    <img src="./imagens/cartazringo.jpg" alt="Ringo" class="img-hover">
-                    <div class="capitao-text">
-                        <h2 class="ringo">Ringo</h2>
-                        <p class="apresenta"><i>"Não seja tolo! Tontattas também podem ser bravos guerreiros. Avancem meus amigos, hoje mostraremos que também podemos ser grandes!"</i></p>
-                        <br>
-                        <p><i>Líder do maior grupo de tontattas da tripulação, um infame guerreiro. É internamente conhecido como docinho.</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <hr>
 
-    <section class="comandante" id="Comandantes"></section>
-    <div class="container">
-        <div class="capitao-card">
-            <div class="capitao-image">
-                <img src="./imagens/cartazperseus.jpg" alt="Ringo" class="img-hover">
-                <div class="capitao-text">
-                    <h2 class="ringo">Perseus</h2>
-                    <p class="apresenta"><i>"ELES ENVIARAM QUEM?! QUE MERDA!"</i></p>
-                    <br>
-                    <p><i>Um dos piratas mais promissores da tripulação, um lutador por natureza.</i></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
+        
     </main>
     <script src="./app.js"></script>
 </body>

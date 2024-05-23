@@ -1,150 +1,184 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+body{
+  background: #f2f2f2;
 }
-
-a:hover {
-    opacity: 0.7;
+nav{
+  background: #1b1b1b;
 }
-
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: "Bungee", sans-serif;
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
 }
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #000000;
-    height: 8vh;
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
 }
-
-main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
 }
-
-.nav-list {
-    list-style: none;
-    display: flex;
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
 }
-
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
 }
-
-.mobile-menu {
+nav ul li a:hover{
+  color: rgb(162, 0, 255);
+  border-radius: 5px;
+  box-shadow:  0 0 5px rgb(162, 0, 255),
+              0 0 10px rgb(162, 0, 255);
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid rgb(162, 0, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
     display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-
-@media (max-width: 999px) {
-    body {
-    overflow-x: hidden;
-    }
-    .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #23232e;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-    }
-    .mobile-menu {
+  }
+  nav ul li,nav ul ul li{
     display: block;
-    }
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from {
-    opacity: 0;
-    transform: translateX(50px);
-    }
-    to {
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    /* padding: 0 20px; */
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: rgb(162, 0, 255);
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
     opacity: 1;
-    transform: translateX(0);
-    }
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
 }
 
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
 }
 
-.mobile-menu.active .line2 {
-    opacity: 0;
+.p-2 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+.central-1 {
+  background-image: url(./imagenss/luffypng.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
-body {
-    background-color: #23232e;
-}
-
-.jollyroger img {
-    max-width: 100px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 20px; /* Espaço entre a imagem e o texto */
-}
-
-.texto-apresentacao {
-    width: 80%; /* A largura do texto em relação à largura do contêiner */
-    max-width: 600px; /* Largura máxima do texto para telas maiores */
-}
-
-.container p {
-    font-family: "Roboto", sans-serif;
-    color: white;
-    font-weight: bold;
-}
-
-.titulo {
-    color: white;
-    font-family: "Bungee", sans-serif;
-    font-weight: normal;
+nav ul ul {
+  z-index: 9999; /* Aumente o z-index para garantir que o menu dropdown esteja acima das imagens */
 }
