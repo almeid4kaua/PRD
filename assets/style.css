@@ -120,7 +120,7 @@ nav ul ul ul li{
     cursor: pointer;
   }
   .show:hover{
-    color: rgb(162, 0, 255);
+    color: #FFA500;
   }
   .icon{
     display: block;
