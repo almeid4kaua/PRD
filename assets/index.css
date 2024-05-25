@@ -1,0 +1,71 @@
+
+.piratas-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.piratas-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.piratas-title {
+    font-size: 36px;
+    color: #333;
+}
+
+
+.piratas-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.piratas-right {
+    flex: 1;
+    text-align: center;
+}
+
+
+.piratas-image {
+    /* width: 200px; */
+    height: auto;
+    border-radius: 50%;
+    /* border: 5px solid #333; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .piratas-main {
+        flex-direction: column;
+    }
+
+    .piratas-left, .piratas-right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .piratas-left {
+        margin-bottom: 20px;
+    }
+}
+
+body {
+    background: linear-gradient(to bottom right, #FFDAB9, #FFA500);
+}
+
+.piratas-image1 {
+    /* width: 200px; */
+    height: auto;
+    border-radius: 50%;
+    background-color: #333;
+    /* border: 5px solid #333; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

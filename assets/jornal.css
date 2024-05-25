@@ -76,3 +76,9 @@
         font-size: 1.2em;
     }
 }
+
+.jornal-section .jornal-nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Mantém a cor do texto */
+    font-weight: bold; /* Mantém o peso da fonte */
+}
