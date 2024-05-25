@@ -48,7 +48,7 @@
 
 @media (max-width: 768px) {
     .piratas-main {
-        flex-direction: column-reverse; /* Revertendo a ordem dos itens */
+        flex-direction: column-reverse; 
     }
 
     .piratas-left, .piratas-right {
@@ -75,15 +75,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para o parágrafo do card */
 .card p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
 
-
-/* Estilo para o botão */
 .button {
     cursor: pointer;
     position: relative;
